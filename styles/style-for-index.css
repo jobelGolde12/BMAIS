@@ -1,0 +1,44 @@
+
+:root{
+  --bg-primary: #f5f5f5;
+ }
+ 
+  section{
+   width: 100vw;
+   height: 100vh;
+   
+  }
+ 
+ ._main{
+   position: absolute;
+   top: 0;
+   left: 0;
+  justify-content: center;
+   align-items: center;
+   background: var(--bg-primary);
+   overflow-x: hidden;
+ }
+ 
+ ._logo{
+     position: absolute;
+     width: 15%;
+     height: 30%;
+     background: url('/images/bulanLogo.jpg');
+     border-radius: 50%;
+     background-position: center;
+     background-size: cover;
+     transform: translateY(-90%);
+     
+ }
+ 
+  ._button-handler{
+   position: relative;
+   width: 50%;
+   height: 7%;
+   align-self: center;
+   left: 16.5%;
+  top: 1rem;
+ 
+  }
+
+ 
