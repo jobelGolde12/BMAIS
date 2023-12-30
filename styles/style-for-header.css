@@ -1,0 +1,50 @@
+
+:root{
+    --bg-primary: #fff;
+    --clr-primary: #fff;
+    --clr-secondary: #333;
+    --clr-tri: #ccc;
+}
+
+._header{
+    justify-content: space-between;
+    overflow: hidden;
+    height: 10%;
+    position: fixed;
+    z-index: 999;
+}
+
+._searchbar{
+    position: relative;
+    width: 30%;
+    margin-top: 0;
+    left: 5%;
+   
+}
+._searchbar i{
+    position: relative;
+    transform: translateY(-30%);
+    left: 76%;
+    z-index: 1;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+#_search{
+    position: relative;
+    width: 80%;
+    border-radius: 20px;
+    border: 1px solid var(--clr-tri);
+    padding: .3rem 1rem;
+}
+._top-right-side-info img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+._top-right-side-info i{
+    cursor: pointer;
+}

@@ -5,5 +5,7 @@
   --clr-primary: #fff;
   --clr-secondary: #333;
 }
- 
+ body{
+  background: #333;
+ }
 
