@@ -1,11 +1,11 @@
 
-:root{
-  --bg-side: #2c3e50;
-  --bg-main: #f5f5f5;
-  --clr-primary: #fff;
-  --clr-secondary: #333;
-}
- body{
-  background: #333;
- }
+@import '/styles/global.css';
 
+body{
+  height: 100vh;
+  overflow-y: scroll;
+  background: var(--bg-main);
+}
+body{
+  background: #000;
+}

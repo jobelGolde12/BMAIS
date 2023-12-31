@@ -1,17 +1,13 @@
 
-:root{
-    --bg-primary: #fff;
-    --clr-primary: #fff;
-    --clr-secondary: #333;
-    --clr-tri: #ccc;
-}
 
+@import '/styles/global.css';
 ._header{
     justify-content: space-between;
     overflow: hidden;
     height: 10%;
     position: fixed;
     z-index: 999;
+    background: var(--bg-primary);
 }
 
 ._searchbar{

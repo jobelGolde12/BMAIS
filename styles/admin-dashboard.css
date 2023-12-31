@@ -1,0 +1,9 @@
+@import 'global/css';
+
+._admin-dashboard{
+  position: absolute;
+  top: 7%;
+  background: #000;
+  left: 30%;
+  width: calc(100vw - 30%);
+}

@@ -9,5 +9,6 @@
 <body>
    <?php include('header.html');?>
    <?php include('side-nav.html');?>
+   <?php include('admin-dashboard.php');?>
 </body>
 </html>
