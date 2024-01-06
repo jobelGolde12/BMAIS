@@ -7,8 +7,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open dashboard.php",
-            "file": "C:/BMAIS/webPages/dashboard.php"
+            "name": "Open index.html",
+            "file": "C:/BMAIS/webPages/index.html"
         }
     ]
 }
