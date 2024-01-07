@@ -11,6 +11,17 @@
     top: 0;
 }
 
+._logo ._circle-image-logo{
+    background: url('/images/bulanLogo.jpg');
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-position: center;
+    background-size: cover;
+}
+._logo p{
+    margin-top: 2px;
+}
 ._searchbar{
     position: relative;
     width: 30%;
@@ -21,7 +32,7 @@
 ._searchbar i{
     position: relative;
     transform: translateY(-30%);
-    left: 76%;
+    left: 83%;
     z-index: 1;
     outline: none;
     border: none;
@@ -31,10 +42,11 @@
 
 #_search{
     position: relative;
-    width: 80%;
+    width: 90%;
     border-radius: 20px;
     border: 1px solid var(--clr-tri);
     padding: .3rem 1rem;
+    left: -.5rem;
 }
 ._top-right-side-info img{
     width: 30px;

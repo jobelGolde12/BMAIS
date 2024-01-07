@@ -4,28 +4,19 @@
     data(){
        return {
         showsidenavHomeLinks: false,
-        showsidenavBarangayOfficialLinks: false
+        showsidenavBarangayOfficialLinks: false,
+        showsidenavStaffLinks: false,
+        showsidenavPurokLeaderLinks: false
        }
     }, //end of data
 
     methods: {
-        toggleSidenavHomeLinks(){     
-            if(this.showsidenavHomeLinks === true){
-                this.showsidenavHomeLinks = false;
-            }else{
-                this.showsidenavHomeLinks = true;
-            }         
-        
-        },
+        toggleSidenavHomeLinks(){this.showsidenavHomeLinks = !this.showsidenavHomeLinks;},
+        toggleSidenavBarangayOfficialLinks(){this.showsidenavBarangayOfficialLinks = !this.showsidenavBarangayOfficialLinks;},
+        toggleSidenavStaffLinks(){this.showsidenavStaffLinks = !this.showsidenavStaffLinks;},
+        toggleSidenavPurokLeaderLinks(){this.showsidenavPurokLeaderLinks = !this.showsidenavPurokLeaderLinks;}
 
-        toggleSidenavBarangayOfficialLinks(){     
-            if(this.showsidenavBarangayOfficialLinks === true){
-                this.showsidenavBarangayOfficialLinks = false;
-            }else{
-                this.showsidenavBarangayOfficialLinks = true;
-            }
-    }
-}//end of methods
-})
+} //end of methods
+}) // End of Vue.createApp
 
 app.mount('#admin-dashboard-vue')

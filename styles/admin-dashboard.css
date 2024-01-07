@@ -19,7 +19,8 @@ body{
   width: 30%;
   height: 100%;
   left: 0;
- padding-left: 1rem;
+  padding-left: 1.5rem;
+  top: 1rem;
 }
 
 
@@ -73,4 +74,39 @@ body{
 ._side-nav-barangay-official-link a{
   text-decoration: none;
   color: var(--clr-secondary);
+}
+
+._side-nav-staff-link a{
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+._side-nav-staff-link a:hover, ._side-nav-staff-link p:hover{
+  color: var(--clr-in-hover);
+}
+
+._side-nav-purok-leader-link a{
+  text-decoration: none;
+  color: var(--secondary);
+}
+._side-nav-purok-leader-link a:hover, ._side-nav-purok-leader-link p:hover{
+  color: var(--clr-in-hover);
+}
+
+._atitvities a{
+  text-decoration: none;
+  color: var(--clr-secondary);
+}
+
+._atitvities a:hover{
+  color: var(--clr-in-hover);
+}
+
+._household a , ._announcement a{
+  text-decoration: none;
+  color: var(--clr-secondary);
+}
+
+._household a:hover , ._announcement a:hover{
+  color: var(--clr-in-hover);
 }
