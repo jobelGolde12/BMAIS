@@ -8,6 +8,7 @@
     position: fixed;
     z-index: 999;
     background: var(--bg-primary);
+    top: 0;
 }
 
 ._searchbar{

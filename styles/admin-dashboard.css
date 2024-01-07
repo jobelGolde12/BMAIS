@@ -1,10 +1,17 @@
 @import 'global/css';
-
+ 
+body{
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
 ._admin-dashboard{
   position: absolute;
   width: 100vw;
   height: 100vh;
   left: 0;
+  top: 10%;
+  overflow-x: hidden;
 }
 
 ._admin-dashboard ._sidenav{
@@ -27,9 +34,43 @@
   position: relative;
   top: 0;
   left: 0;
+  border-bottom: 1px solid var(--clr-tri);
+  padding-bottom: .2rem;
 }
 ._sidenav ._sidenav-header h1{
-  background: blue;
+  background: var(--logo-a-bg);
   color: #fff;
-  padding: 1rem;
+  border-radius: 50%;
+  width: 30px;
+  height:30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+._sidenav ._sidenav-header  span{
+  margin-top: .1rem;
+}
+
+._side-nav-home-link ._dropdown-list a{
+  text-decoration: none;
+  color: var(--clr-secondary);
+  margin-bottom: 1px;
+}
+._side-nav-home-link ._dropdown-list a:hover , ._side-nav-home-link p:hover{
+  color: var(--clr-in-hover);
+}
+
+._side-nav-home-link{
+  cursor: pointer;
+}
+
+._side-nav-barangay-official-link p:hover, ._side-nav-barangay-official-link a:hover{
+ color: var(--clr-in-hover);
+}
+
+._side-nav-barangay-official-link a{
+  text-decoration: none;
+  color: var(--clr-secondary);
 }
