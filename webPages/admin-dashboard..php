@@ -9,7 +9,7 @@
  <div class="_sidenav">
 
  <div class="_sidenav-header">
- <h1 class="fs-5">text here</h1>
+ <h1 class="fs-5">a bug here</h1>
 
  </div>
 
