@@ -11,40 +11,128 @@
     <link rel="stylesheet" href="../styles/global.css">
 </head>
 <body>
-    <section class="_main d-flex flex-column">
+    <section id="app" class="_main d-flex flex-column">
       
 
       <div class="_bmais container text-center mt-5 p-3 d-flex flex-column">
         <div class="_logo"></div>
         <h2>Barangay Bonga Management <br> And <br> Information System</h2>
         <div class="_button-handler container d-flex flex-row gap-5">
-          <button id="signIn" class="btn btn-primary text-light">Signin</button>
+          <button id="signIn" class="btn btn-primary text-light"  data-bs-toggle="modal" data-bs-target="#signinmodal">Signin</button>
           <button type="button" id="signUp" class="btn btn-secondary text-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Signup</button>
         </div>
-      </div>
+      </div> <!--End of class _bmais-->
 
      <!--Signup modal-->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Signup</h1>
+      <div class=" modal-header">
+        <h1 class="_signup-modal-title modal-title fs-5" id="exampleModalLabel">Signup</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <form action="dashboard.php" method="post">
+      <form action="index.php" method="post">
+        <div class="input-group mb-3">
+
+          <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope"></i></span>
+          <input type="text" class="form-control" placeholder="email" aria-label="Email" aria-describedby="basic-addon1">
+        </div>
+
         <div class="input-group mb-3">
           <span class="input-group-text" id="basic-addon1"><i class="bi bi-person"></i></span>
-          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+          <input type="text" class="form-control" placeholder="username" aria-label="Username" aria-describedby="basic-addon1">
         </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1"><i class="bi bi-lock"></i></span>
+          <input type="password" class="form-control" placeholder="password" aria-label="Password" aria-describedby="basic-addon1">
+        </div>
+
+
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1"><i class="bi bi-lock"></i></span>
+          <input type="password" class="form-control" placeholder="confirm password" aria-label="Password" aria-describedby="basic-addon1">
+        </div>
+
+
+       <div class="container-fluid d-flex gap-2 justify-content-end">
+       
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+           select type
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#">Admin</a></li>
+            <li><a class="dropdown-item" href="#">Barangay official</a></li>
+            <li><a class="dropdown-item" href="#">Community member or resident</a></li>
+            <li><a class="dropdown-item" href="#">BHW of Barangay</a></li>
+          </ul>
+        </div> <!--end of the dropdown-->
+     
+        <button type="submit" class="btn btn-primary float-right">Submit</button>
+
+
+       </div>
       </form>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+     
+      
     </div>
   </div>
 </div><!--end of signup modal-->
+
+
+
+
+    <!--Sign in modal here -->
+
+<div class="modal fade" id="signinmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Signin</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       
+       <form action="index.php" action="post">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1"><i class="bi bi-person"></i></span>
+          <input type="text" class="form-control" placeholder="username" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1"><i class="bi bi-lock"></i></span>
+          <input type="text" class="form-control" placeholder="password" aria-label="Pasword" aria-describedby="basic-addon1">
+        </div>
+
+       </form>
+
+      </div> <!--End of modal body-->
+      <div class="modal-footer d-flex flex-row align-items-center">
+       
+        <div class="_forgot-password">
+          <a href="#" class="text-decoration-none">Forgot password?</a>
+        </div>
+
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+           select type
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#">Admin</a></li>
+            <li><a class="dropdown-item" href="#">Barangay official</a></li>
+            <li><a class="dropdown-item" href="#">Community member or resident</a></li>
+            <li><a class="dropdown-item" href="#">BHW of Barangay</a></li>
+          </ul>
+        </div> <!--end of the dropdown-->
+
+        <button type="button" class="btn btn-primary" id="signin-btn-done">Done</button>
+      </div>
+    </div>
+  </div>
+</div> <!--End of signin modal-->
     </section> <!--end of section _main-->
 
     

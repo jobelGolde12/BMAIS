@@ -46,3 +46,12 @@
   justify-content: center;
   align-items: center;
  }
+
+ ._signup-modal-title{
+margin-inline-start: 12rem;
+ }
+
+ ._forgot-password{
+  position: relative;
+ margin-right: 9rem;
+ }
