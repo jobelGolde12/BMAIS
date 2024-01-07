@@ -4,7 +4,23 @@
     <link rel="stylesheet" href="/styles/global.css">
 
 
-<div class="_admin-dashboard"></div>
+<div class="_admin-dashboard d-flex flex-row ">
+    <?php include('header.html');?>
+ <div class="_sidenav">
+
+ <div class="_sidenav-header">
+ <h1 class="fs-5">text here</h1>
+
+ </div>
+
+  
+ </div>  <!-- End of _sidenav -->
+
+<div class="_main-dashboard">
+
+</div> <!-- End of main-dashboard -->
+
+</div> <!-- edn of _admin-dashboard -->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="/scripts/script-for-index.js"></script>

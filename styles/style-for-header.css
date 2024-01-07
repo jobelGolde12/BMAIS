@@ -43,4 +43,5 @@
 
 ._top-right-side-info i{
     cursor: pointer;
+    margin-top: .5rem;
 }
