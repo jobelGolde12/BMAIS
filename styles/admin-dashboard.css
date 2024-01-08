@@ -3,7 +3,7 @@
 body{
   width: 100vw;
   height: 100vh;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 ._admin-dashboard{
   position: absolute;
@@ -12,6 +12,7 @@ body{
   left: 0;
   top: 10%;
   overflow-x: hidden;
+  overflow: hidden;
 }
 
 ._admin-dashboard ._sidenav{
@@ -21,14 +22,39 @@ body{
   left: 0;
   padding-left: 1.5rem;
   top: 1rem;
+  transition: .5s;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 1;
+  border-radius: 0 10px 10px 0;
 }
 
+._sidenav::-webkit-scrollbar {
+  display: none;
+}
+
+ ._sidenav-list{
+  position: absolute;
+  font-size: 1.8rem;
+  left: 30%;
+  top: 0;
+  z-index: 30;
+  color: var(--clr-secondary);
+  cursor: pointer;
+  transition: .5s;
+}
+
+
+ ._sidenav-list:hover{
+  color: var(--clr-in-hover);
+}
 
 ._admin-dashboard ._main-dashboard{
   position: relative;
   width: 70%;
   height: 100%;
-
+  background: var(--bg-main);
+  overflow-y: scroll;
 }
 
 ._sidenav ._sidenav-header{
@@ -102,11 +128,44 @@ body{
   color: var(--clr-in-hover);
 }
 
-._household a , ._announcement a{
+._household a , ._announcement a , ._user-data a{
   text-decoration: none;
   color: var(--clr-secondary);
 }
 
-._household a:hover , ._announcement a:hover{
+._household a:hover , ._announcement a:hover , ._user-data a:hover{
   color: var(--clr-in-hover);
 }
+
+._side-nav-add-resident-link a{
+  text-decoration: none;
+ color: var(--clr-secondary);
+}
+
+._side-nav-add-resident-link a:hover , ._side-nav-add-resident-link p:hover{
+  color: var(--clr-in-hover);
+ }
+ ._announcement h1 , ._announcement p{
+  color: var(--clr-secondary);
+ }
+
+ ._announcement-header #searchAnnouncementDate{
+   border: 0;
+   background: transparent;
+   cursor: pointer;
+
+ }
+
+ ._announcement-header #searchAnnouncementDate:hover{
+  color: var(--clr-in-hover);
+ }
+
+ ._announcement-header ._head-content{
+  opacity: .9;
+ }
+
+ ._announcement-table{
+  position: relative;
+  width: 100%;
+  border-collapse: collapse;
+ }
