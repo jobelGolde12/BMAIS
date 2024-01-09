@@ -4,6 +4,7 @@ body{
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  background: var(--bg-primary);
 }
 ._admin-dashboard{
   position: absolute;
@@ -21,14 +22,18 @@ body{
   height: 100%;
   left: 0;
   padding-left: 1.5rem;
-  top: 1rem;
+  padding-top: 1rem;
   transition: .5s;
   overflow-y: scroll;
   overflow-x: hidden;
   z-index: 1;
-  border-radius: 0 10px 10px 0;
+  border-right: 1px solid var(--clr-tri);
+  background: var(--bg-primary);
 }
 
+._admin-dashboard ._sidenav p{
+  color: var(--clr-primary);
+}
 ._sidenav::-webkit-scrollbar {
   display: none;
 }
@@ -53,7 +58,7 @@ body{
   position: relative;
   width: 70%;
   height: 100%;
-  background: var(--bg-main);
+  background: var(--bg-primary);
   overflow-y: scroll;
 }
 
@@ -63,6 +68,7 @@ body{
   left: 0;
   border-bottom: 1px solid var(--clr-tri);
   padding-bottom: .2rem;
+  background: var(---bg-primary);
 }
 ._sidenav ._sidenav-header h1{
   background: var(--logo-a-bg);
@@ -146,7 +152,7 @@ body{
   color: var(--clr-in-hover);
  }
  ._announcement h1 , ._announcement p{
-  color: var(--clr-secondary);
+  color: var(--clr-primary);
  }
 
  ._announcement-header #searchAnnouncementDate{
@@ -168,4 +174,25 @@ body{
   position: relative;
   width: 100%;
   border-collapse: collapse;
+ }
+
+ ._home ._home-header{
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 20%;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: auto;
+  gap: 1rem;
+  flex-wrap: wrap;
+ }
+ ._home ._home-header .card{
+  position: relative;
+  padding: 1rem;
+  min-width: 20%;
+
  }

@@ -19,7 +19,7 @@
             <div class="_sidenav-header d-flex flex-row gap-1">
                 <h1>A</h1> <span>Administrator</span>
             </div>
-
+            
             <div class="_side-nav-home-link mt-2">
                 <p @click="toggleSidenavHomeLinks">
                     <i class="bi bi-chevron-down" v-if="showsidenavHomeLinks"></i>
@@ -29,7 +29,7 @@
                 </p>
 
                 <div class="_dropdown-list d-flex flex-column ps-5" v-if="showsidenavHomeLinks">
-                    <a href="$">Home</a>
+                    <a href="#">Home</a>
                     <a href="#" @click="seeAnnouncement">Announcements or News</a>
                     <a href="#">Services</a>
                     <a href="#">Directory or Contacts</a>
@@ -248,9 +248,34 @@
 
             <!-- home -->
 
-            <div class="_home">
+            <div class="_home pt-5" v-if="homeIsClicked" >
+                <div class="_home-header ps-5 pe-5">
+                    <div class="card">
+                        <div >data</div>
+                    </div>
+
+                    <div class="card">
+                        <div >data</div>
+                    </div>
+
+                    <div class="card">
+                        <div >data</div>
+                    </div>
+
+                    <div class="card">
+                        <div >data</div>
+                    </div>
+
+                  
+                </div>  <!-- End of _home-header -->
+
                 
-            </div>
+
+                
+                <canvas id="homeChart" class="container">
+
+                </canvas>
+            </div> <!-- End of _home -->
         </div> <!-- End of main-dashboard -->
 
     </div> <!-- End of _admin-dashboard -->
