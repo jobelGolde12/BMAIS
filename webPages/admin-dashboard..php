@@ -146,8 +146,8 @@
                         <div class="input-group">
                             <input type="search" class="form-control" placeholder="Search...">
                             <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button">
-                                    <i class="bi bi-search"></i> <!-- Assuming you're using Bootstrap Icons -->
+                                <button class="btn btn-secondary" type="button">
+                                    <i class="bi bi-search"></i>
                                 </button>
                             </div>
                         </div>
@@ -250,20 +250,22 @@
 
             <div class="_home pt-5" v-if="homeIsClicked" >
                 <div class="_home-header ps-5 pe-5">
-                    <div class="card">
-                        <div >data</div>
+                    <div class="card card1 _gradient-bg1">
+                        <div class="d-flex flex-row align-items-center gap-2">
+                        <i class="bi bi-people text-success fs-3"></i>    
+                        <span>1,500</span> resident's</div>
                     </div>
 
-                    <div class="card">
-                        <div >data</div>
+                    <div class="card card2 _gradient-bg2">
+                        <div class="d-flex flex-row align-items-center gap-2">
+                        <i class="bi bi-bell text-primary fs-3"></i>    
+                        <span>50+</span> Notifications</div>
                     </div>
 
-                    <div class="card">
-                        <div >data</div>
-                    </div>
-
-                    <div class="card">
-                        <div >data</div>
+                    <div class="card card3 _gradient-bg3">
+                        <div class="d-flex flex-row align-items-center gap-2">
+                        <i class="bi bi-cash text-light fs-3"></i>    
+                        <span>10k</span> Funds</div>
                     </div>
 
                   

@@ -3,13 +3,14 @@
 let sideNavBgColor = 'white'
 function changeTheme(){
     document.querySelector('._sidenav').style.transitionDuration  = '0s';
+    document.querySelector('._sidenav-list').style.transitionDuration  = '0s';
 
 
     if(sideNavBgColor === 'white'){
 
         sideNavBgColor = 'black'
         document.documentElement.style.setProperty('--bg-primary', '#333');
-        document.documentElement.style.setProperty('--bg-main', 'black');
+        document.documentElement.style.setProperty('--bg-main', '#333');
         document.documentElement.style.setProperty('--clr-secondary', 'white');
         document.documentElement.style.setProperty('--clr-primary', '#333');
         document.documentElement.style.setProperty('--clr-in-hover', 'orange');

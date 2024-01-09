@@ -21,6 +21,7 @@
 }
 ._logo p{
     margin-top: 2px;
+    color: var(--clr-secondary);
 }
 ._searchbar{
     position: relative;
@@ -57,4 +58,5 @@
 ._top-right-side-info i{
     cursor: pointer;
     margin-top: .3rem;
+    color: var(--clr-secondary);
 }

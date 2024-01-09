@@ -32,7 +32,7 @@ body{
 }
 
 ._admin-dashboard ._sidenav p{
-  color: var(--clr-primary);
+  color: var(--clr-secondary);
 }
 ._sidenav::-webkit-scrollbar {
   display: none;
@@ -58,7 +58,7 @@ body{
   position: relative;
   width: 70%;
   height: 100%;
-  background: var(--bg-primary);
+  background: var(--bg-main);
   overflow-y: scroll;
 }
 
@@ -84,6 +84,7 @@ body{
 
 ._sidenav ._sidenav-header  span{
   margin-top: .1rem;
+  color: var(--clr-secondary);
 }
 
 ._side-nav-home-link ._dropdown-list a{
@@ -168,12 +169,14 @@ body{
 
  ._announcement-header ._head-content{
   opacity: .9;
+  color: var(--clr-secondary);
  }
 
  ._announcement-table{
   position: relative;
   width: 100%;
   border-collapse: collapse;
+  color: var(--clr-secondary);
  }
 
  ._home ._home-header{
@@ -194,5 +197,22 @@ body{
   position: relative;
   padding: 1rem;
   min-width: 20%;
+ cursor: pointer;
 
+ }
+
+ ._home ._home-header .card1{
+  color: var(--clr-secondary);
+ }
+
+ ._gradient-bg1{
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+ }
+ ._gradient-bg2{
+  background-image: linear-gradient( 120deg, #84fab0 0%, #8fd3f4 100%);
+ }
+
+ ._gradient-bg3{
+  background-image: linear-gradient(to right, #ff9a9e, #fecfef);
+  
  }
