@@ -21,6 +21,10 @@ function changeTheme(){
         document.documentElement.style.setProperty('--clr-secondary', '#333');
         document.documentElement.style.setProperty('--clr-primary', '#fff');
         document.documentElement.style.setProperty('--clr-in-hover', 'blue');
+
+
+        document.querySelector('._sidenav').style.transitionDuration  = '.5s';
+        document.querySelector('._sidenav-list').style.transitionDuration  = '.5s';
     }
    
 

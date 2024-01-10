@@ -265,18 +265,15 @@
                     <div class="card card3 _gradient-bg3">
                         <div class="d-flex flex-row align-items-center gap-2">
                         <i class="bi bi-cash text-light fs-3"></i>    
-                        <span>10k</span> Funds</div>
+                        <span>100k</span> Funds</div>
                     </div>
 
                   
                 </div>  <!-- End of _home-header -->
 
-                
-
-                
-                <canvas id="homeChart" class="container">
-
-                </canvas>
+                <div class="container">
+                <canvas id="homeChart" width="400" height="400"></canvas>
+                </div>
             </div> <!-- End of _home -->
         </div> <!-- End of main-dashboard -->
 

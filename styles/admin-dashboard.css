@@ -64,9 +64,11 @@ body{
 
 ._sidenav ._sidenav-header{
   position: relative;
-  top: 0;
+  top: -2.5%;
   left: 0;
   border-bottom: 1px solid var(--clr-tri);
+  border-top: 1px solid var(--clr-tri);
+  padding-top: 1rem;
   padding-bottom: .2rem;
   background: var(---bg-primary);
 }
